@@ -10,7 +10,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      height: 100vh;
+      min-height: 100vh;
       margin: 0;
       background: #0d1117;
       color: #c9d1d9;
@@ -18,29 +18,53 @@
     .card {
       background: #161b22;
       border: 1px solid #30363d;
-      border-radius: 12px;
-      padding: 32px 48px;
+      border-radius: 16px;
+      padding: 40px;
+      max-width: 420px;
       text-align: center;
-      box-shadow: 0 8px 24px rgba(0,0,0,0.4);
+      box-shadow: 0 12px 32px rgba(0,0,0,0.5);
     }
-    h1 { color: #58a6ff; margin-bottom: 8px; }
-    p { color: #8b949e; line-height: 1.6; }
-    .tag {
-      display: inline-block;
-      padding: 4px 12px;
-      background: #238636;
+    .avatar {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      border: 2px solid #58a6ff;
+      margin-bottom: 16px;
+    }
+    h1 { color: #f0f6fc; margin: 0 0 8px 0; font-size: 24px; }
+    p { color: #8b949e; line-height: 1.6; font-size: 14px; margin-bottom: 24px; }
+    .btn-group {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+    .link-btn {
+      display: block;
+      padding: 10px 16px;
+      background: #21262d;
+      color: #58a6ff;
+      text-decoration: none;
+      border: 1px solid #30363d;
+      border-radius: 8px;
+      font-weight: 500;
+      transition: all 0.2s ease;
+    }
+    .link-btn:hover {
+      background: #30363d;
+      border-color: #8b949e;
       color: #ffffff;
-      border-radius: 20px;
-      font-size: 14px;
-      margin-top: 12px;
     }
   </style>
 </head>
 <body>
   <div class="card">
-    <h1>你好，我是 ZSD29 👋</h1>
-    <p>這是我的第一個託管在 GitHub Pages 上的個人網站。</p>
-    <div class="tag">GitHub 新手啟航</div>
+    <img src="https://github.com/ZSD29.png" alt="Avatar" class="avatar">
+    <h1>ZSD29</h1>
+    <p>正在探索開源世界與前端建置，這是基於 GitHub Pages 架設的個人聚合頁。</p>
+    <div class="btn-group">
+      <a href="https://github.com/ZSD29" target="_blank" class="link-btn">造訪我的 GitHub 主頁</a>
+      <a href="https://github.com/ZSD29/shiyan1" target="_blank" class="link-btn">檢視此網站原始碼</a>
+    </div>
   </div>
 </body>
 </html>
